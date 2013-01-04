@@ -1,0 +1,36 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.news {
+  color: #444;
+
+  h1 {
+    color: #333;
+    border-bottom: 1px solid #333;
+    padding-bottom: 4px;
+    // text-decoration:underline
+  }
+  p {
+    font-size: 18px;
+  }
+}
+.extlink {
+  color: #000;
+  text-decoration: none;
+  &:hover {
+    color: #08C;
+    text-decoration: none;
+  }
+}
+
+.page-header {
+  border-bottom: 2px solid #823337;
+  padding-top: 12px;
+
+  .extlink {
+    padding-right: 24px;
+    padding-top: 12px;
+  }
+
+}
