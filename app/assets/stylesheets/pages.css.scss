@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.map {
+  padding-top: 12px;
+}
+
 .news {
   color: #444;
 
@@ -13,6 +17,7 @@
   }
   p {
     font-size: 18px;
+    line-height: 24px;
   }
 }
 .extlink {
