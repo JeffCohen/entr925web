@@ -18,6 +18,7 @@ class ScrabbleController < ApplicationController
     respond_to do |format|
       format.html
       format.json { render json: { :word => word, :score => score } }
+      format.xml { render xml: { :word => word, :score => score } }
     end
   end
 
