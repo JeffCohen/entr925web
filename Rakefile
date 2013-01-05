@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Jc::Application.load_tasks
+CSPP52553App::Application.load_tasks
