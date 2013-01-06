@@ -1,15 +1,27 @@
-%h1 Scrabble Score
-%p
-  To use this service, send an HTTP request to this endpoint:
+.row
+  .span9
+    %h1 Scrabble Score
 
-%pre
-  http://www.cspp52553.com/scrabble/{word}.json
+    %h3
+      Hello! You've reached an HTML representation of this service.
 
-%p For example:
+    %p
+      To use this service, send another HTTP request to this endpoint:
 
-%pre
-  http://www.cspp52553.com/scrabble/{hockey}.json
+    %pre
+      http://www.cspp52553.com/scrabble/{word}.json
 
-%p
-  You'll get a JSON response that will include the Scrabble score for that word.
+    %p
+      Note the
+      %code .json
+      at the end of the url.
+
+    %p
+      %strong For example:
+
+    %pre
+      http://www.cspp52553.com/scrabble/hockey.json
+
+    %p
+      You'll get a JSON response that will include the Scrabble score for that word.
 

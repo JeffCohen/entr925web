@@ -6,7 +6,7 @@ class ScrabbleController < ApplicationController
           }
 
   def score
-    word = params[:word][0,7]
+    word = params[:word].to_s[0,7]
     score = 0
 
     word.each_char do |letter|
