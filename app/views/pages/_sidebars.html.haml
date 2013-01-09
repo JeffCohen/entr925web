@@ -4,15 +4,16 @@
       Resources
 
     %ul
-      %li= link_to "Homework Repository on GitHub", homework_url
-      %li= link_to "Course Syllabus", '#'
+      %li= link_to "Homework for Week 1", homework_url
+      %li= link_to "Q&A via Piazza", piazza_url
+      %li= link_to "Course Syllabus", syllabus_path, target: '_blank'
 
   .well
     %h2 Instructors
     %p
-      Jeff Cohen (Lecturer)
-      = mail_to "jeffcohen@cs.uchicago.edu"
+      = mail_to "jeffcohen@cs.uchicago.edu", "Jeff Cohen"
+      (Lecturer)
     %p
-      Raghu Betina
+      Raghu Betina (TA)
     %p
-      Brian Eng
+      Brian Eng (TA)
