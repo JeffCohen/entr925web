@@ -1,0 +1,13 @@
+%h2
+  - if @tie
+    IT'S A TIE!
+  - elsif @cpu_wins
+    I WIN!
+  - else
+    YOU WIN!
+%p= link_to "Play again", rps_path
+
+= send(@human)
+= send(@cpu)
+
+

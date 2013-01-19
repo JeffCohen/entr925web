@@ -12,6 +12,7 @@ end
 group :development do
   gem 'sqlite3'
   gem 'haml-rails'
+  gem 'quiet_assets'
 end
 
 group :assets do
