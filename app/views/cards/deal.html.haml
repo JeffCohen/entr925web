@@ -1,0 +1,10 @@
+#poker
+  .row
+    .span12
+      %h1 Poker Cards
+      %p= link_to 'Refresh this page to deal a new hand.', poker_url
+
+  .row
+    .span12.hand
+      - @hand.each do |card|
+        = image_tag "cards/#{card}"
