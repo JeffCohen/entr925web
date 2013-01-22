@@ -1,0 +1,41 @@
+#poker
+  .row
+    .span12.page-header
+      %h1 Dice Game
+
+  .row
+    .span12
+      - if @dice
+        = image_tag "dice/#{@dice.first}.png"
+        = image_tag "dice/#{@dice.last}.png"
+  .row
+    .span12
+      - if @win
+        %h2 YOU WIN!
+        %h2= link_to 'Start Over', dice_path
+      - elsif @lose
+        %h2 YOU LOSE.
+        %h2= link_to 'Play again.', dice_path
+      - elsif @point
+        %h2 Your point is #{@point}.  You can roll again.
+        %h2= button_to 'Roll again.', dice_roll_path(:point => @point)
+      - elsif @total
+        %h2 Your point is now #{@total}.
+        %h3 Now try to get #{@total} again before you roll 7 or 11.
+        %h2= button_to "Roll the dice", dice_roll_path(:point => @total)
+      - else
+        %h2 Welcome.
+
+        %p Here are the rules:
+        %ul
+          %li Roll the dice to start the game.
+          %li If your first roll is a 7 or 11, you win.
+          %li If your first roll is a 2, 3 or 12, you lose.
+          %li
+            Anything else becomes your
+            %em point.
+            Roll your point again before a 7 or 11 and you win.
+        %h2= button_to "Roll to start the game!", dice_roll_path
+
+
+
