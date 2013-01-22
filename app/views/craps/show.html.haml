@@ -1,4 +1,4 @@
-#poker
+#dice
   .row
     .span12.page-header
       %h1 Dice Game
@@ -12,17 +12,17 @@
     .span12
       - if @win
         %h2 YOU WIN!
-        %h2= link_to 'Start Over', dice_path
+        %h2= link_to 'Start Over', dice_path, class: 'btn btn-success btn-large'
       - elsif @lose
         %h2 YOU LOSE.
-        %h2= link_to 'Play again.', dice_path
+        %h2= link_to 'Play again.', dice_path, class: 'btn btn-success btn-large'
       - elsif @point
         %h2 Your point is #{@point}.  You can roll again.
-        %h2= button_to 'Roll again.', dice_roll_path(:point => @point)
+        %h2= button_to 'Roll again.', dice_roll_path(:point => @point), class: 'btn btn-success btn-large'
       - elsif @total
         %h2 Your point is now #{@total}.
         %h3 Now try to get #{@total} again before you roll 7 or 11.
-        %h2= button_to "Roll the dice", dice_roll_path(:point => @total)
+        %h2= button_to "Roll the dice", dice_roll_path(:point => @total), class: 'btn btn-success btn-large'
       - else
         %h2 Welcome.
 
@@ -35,7 +35,7 @@
             Anything else becomes your
             %em point.
             Roll your point again before a 7 or 11 and you win.
-        %h2= button_to "Roll to start the game!", dice_roll_path
+        %h2= button_to "Roll to start the game!", dice_roll_path, class: 'btn btn-success btn-large'
 
 
 
