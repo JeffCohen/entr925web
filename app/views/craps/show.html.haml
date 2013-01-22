@@ -21,7 +21,7 @@
         %h2= button_to 'Roll again.', dice_roll_path(:point => @point), class: 'btn btn-success btn-large'
       - elsif @total
         %h2 Your point is now #{@total}.
-        %h3 Now try to get #{@total} again before you roll 7 or 11.
+        %h3 Now try to get #{@total} again before you roll a 7.
         %h2= button_to "Roll the dice", dice_roll_path(:point => @total), class: 'btn btn-success btn-large'
       - else
         %h2 Welcome.
