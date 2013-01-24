@@ -6,7 +6,7 @@ CSPP52553App::Application.routes.draw do
   get "rps" => "rps#new", as: 'rps'
   post "rps" => 'rps#create'
 
-  get "poker" => 'cards#deal'
+  get "poker" => 'cards#deal', as: 'poker'
 
   get "scrabble(/:word)" => 'scrabble#score'
 
