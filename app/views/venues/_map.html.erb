@@ -1,0 +1,19 @@
+<!--
+This partial assumes that a local variable
+has been defined named "venue".
+Since it is not defined here, it must be
+passed in by the calling template, like this:
+
+render 'map', :venue => some_venue_object
+
+If you also pass a :zoom value, it will be used instead
+of the default value of 15, for example:
+
+render 'map', :venue => some_venue_object, :zoom => 10
+-->
+
+<% zoom ||= 15 %>
+<iframe width="425" height="350" frameborder="0" scrolling="no"
+  marginheight="0" marginwidth="0"
+  src="https://maps.google.com/?ie=UTF8&amp;ll=<%= venue.latitude %>,<%= venue.longitude %>&amp;spn=0.081601,0.181789&amp;t=h&amp;z=<%= zoom %>&amp;output=embed">
+</iframe>

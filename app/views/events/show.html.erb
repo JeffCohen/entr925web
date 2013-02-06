@@ -1,0 +1,23 @@
+<h2>Event Details</h2>
+<p id="notice"><%= notice %></p>
+
+<p><%= link_to 'Edit This Event', edit_event_path(@event) %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @event.title %>
+</p>
+
+<p>
+  <b>Happening on:</b>
+  <%= @event.happening_on %>
+</p>
+
+<p>
+  <b>Venue:</b>
+  <%= link_to @event.venue.name, venue_path(@event.venue) %>
+</p>
+
+<%= render 'venues/map', venue: @event.venue  %>
+
+

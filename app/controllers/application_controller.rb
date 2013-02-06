@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-  rescue_from Exception, with: :yikes
+  # rescue_from Exception, with: :yikes
 
 
   def yikes
