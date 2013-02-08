@@ -6,7 +6,7 @@ gem 'haml'
 gem 'twitter-bootstrap-rails'
 
 group :production do
-  gem 'mysql2'
+  # gem 'mysql2'
 end
 
 group :development do
