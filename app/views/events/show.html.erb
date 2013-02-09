@@ -15,7 +15,9 @@
 
 <p>
   <b>Venue:</b>
-  <%= link_to @event.venue.name, venue_path(@event.venue) %>
+  <% if @event.venue %>
+    <%= link_to @event.venue.name, venue_path(@event.venue) %>
+  <% end %>
 </p>
 
 <%#= render 'venues/map', venue: @event.venue  %>
