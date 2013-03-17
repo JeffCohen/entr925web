@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# C1
+
 gem 'rails', '3.2.11'
 gem 'jquery-rails'
 gem 'haml'
