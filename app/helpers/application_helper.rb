@@ -4,12 +4,19 @@ module ApplicationHelper
     "http://github.com/cspp52553/week#{week}".html_safe
   end
 
-  def piazza_url
-    "https://piazza.com/uchicago/winter2013/cspp52553/home".html_safe
+  def piazza_url(quarter = 'spring2013')
+    "https://piazza.com/uchicago/#{quarter}/cspp52553/home".html_safe
   end
 
-  def syllabus_path
-    "/syllabus.pdf".html_safe
+  def syllabus_path(quarter = 'spring2013')
+    "/#{quarter}/syllabus.pdf".html_safe
   end
 
+  def slides_url(quarter = 'spring2013', week_number)
+    "/#{quarter}/slides-week#{week_number}.pdf"
+  end
+
+  def handout_url(filename, quarter = 'spring2013')
+    "/#{quarter}/#{filename}.pdf"
+  end
 end

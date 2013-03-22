@@ -5,35 +5,35 @@
 
     %h3 class content
     %ul
-      %li= link_to "Slides from Week 10", "/slides-week10.pdf"
-      %li= link_to "Slides from Week 9", "/slides-week9.pdf"
+      %li= link_to "Slides from Week 10", slides_url(:winter2013, 10)
+      %li= link_to "Slides from Week 9", slides_url(:winter2013, 9)
       %li= link_to "Code from Week 9", homework_url(9)
-      %li= link_to "Slides from Week 8", "/slides-week8.pdf"
+      %li= link_to "Slides from Week 8", slides_url(:winter2013, 8)
       %li= link_to "Code from Week 8", homework_url(8)
-      %li= link_to "Slides from Week 7", "/slides-week7.pdf"
+      %li= link_to "Slides from Week 7", slides_url(:winter2013, 7)
       %li= link_to "Code from Week 7", homework_url(7)
-      %li= link_to "Slides from Week 6", "/slides-week6.pdf"
+      %li= link_to "Slides from Week 6", slides_url(:winter2013, 6)
       %li= link_to "Code and Homework from Week 6", homework_url(6)
-      %li= link_to "Slides from Week 5", "/slides-week5.pdf"
+      %li= link_to "Slides from Week 5", slides_url(:winter2013, 5)
       %li= link_to "Code and Homework from Week 5", homework_url(5)
-      %li= link_to "Slides from Week 4", "/slides-week4.pdf"
+      %li= link_to "Slides from Week 4", slides_url(:winter2013, 4)
       %li= link_to "Code and Homework from Week 3", homework_url(3)
-      %li= link_to "Slides from Week 3", "/slides-week3.pdf"
+      %li= link_to "Slides from Week 3", slides_url(:winter2013, 3)
       %li= link_to "Code and Homework from Week 2", homework_url(2)
-      %li= link_to "Slides from Week 2", "/slides-week2.pdf"
+      %li= link_to "Slides from Week 2", slides_url(:winter2013, 2)
       %li= link_to "Code and Homework from Week 1", homework_url(1)
-      %li= link_to "Slides from Week 1", "/slides-week1.pdf"
+      %li= link_to "Slides from Week 1", slides_url(:winter2013, 1)
 
     %h3 important resources
     %ul
       %li= link_to "Sign in with Twitter", "/oauth_twitter.pdf"
       %li= link_to "Javascript, jQuery, and Ajax Cheat Sheets", "/javascript.pdf"
       %li= link_to "Model Associations Summary Sheets", "/model_associations.pdf"
-      %li= link_to "Final Project Assignment", "/final_project.pdf"
+      %li= link_to "Final Project Assignment", handout_url(:winter2013, 'final_project')
       %li= link_to "Quick Review for Weeks 1-4", "/weeks1-4.pdf"
       %li= link_to "RCAV and Model Basics PDF", "/rcav-model-basics.pdf"
-      %li= link_to "Q&A via Piazza", piazza_url
-      %li= link_to "Course Syllabus", syllabus_path, target: '_blank'
+      / %li= link_to "Q&A via Piazza", piazza_url
+      %li= link_to "Course Syllabus", syllabus_path(:winter2013), target: '_blank'
       %li= link_to "Git Cheat Sheet", "/git_sheet.pdf"
       %li= link_to "HTML & CSS Guide", "http://learn.shayhowe.com/html-css/"
       %li= link_to "Online Ruby Docs", "http://www.ruby-doc.org/core-1.9.3"
