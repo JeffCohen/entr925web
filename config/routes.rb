@@ -13,4 +13,6 @@ CSPP52553App::Application.routes.draw do
 
   root to: "pages#home"
 
+  get '/winter2013' => 'pages#winter2013', as: 'winter2013'
+
 end

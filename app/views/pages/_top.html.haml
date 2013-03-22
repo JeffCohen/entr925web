@@ -1,20 +1,26 @@
 .page-header
-  .span3
-    = image_tag 'uc.jpg'#, class: 'img-polaroid'
+  .row
+    .span3
+      = link_to image_tag('uc.jpg'), root_url
 
-  .span7
-    %h1
-      CSPP 52553 Web Development
+    .span7
+      %h1
+        = link_to 'CSPP 52553 Web Development', root_url
 
-    %p.lead
-      Winter 2013
-
-
+      %p.lead
+        Spring 2013
 
 
-  .span1.pull-right
-    %a{href: 'http://github.com/cspp52553', class: 'extlink', style: 'font-size: 48px'}
-      %i.icon-github
+
+
+    .span1.pull-right
+      %a{href: 'http://github.com/cspp52553', class: 'extlink', style: 'font-size: 48px'}
+        %i.icon-github
+  .row
+    .span6
+      = link_to "Spring 2013", root_url
+      |
+      = link_to "Winter 2013", winter2013_path
 
 
   .clearfix
