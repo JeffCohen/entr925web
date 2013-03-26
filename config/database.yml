@@ -21,7 +21,7 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: jc
+  database: entr925
   pool: 5
   username: <%= ENV['JC_DB_USER'] %>
   password: <%= ENV['JC_DB_PASSWORD'] %>
