@@ -2,6 +2,47 @@
   %ul.unstyled
 
     %li.news_item
+      %h3 Weeks 4 & 5 Recap
+
+      %p
+        Here are the two main ideas we've covered:
+
+      %p
+        1. A
+        %em model
+        is a Ruby class that represents something in the real world inside of our app.  The model class lives in the
+        %code app/models
+        folder and derives from
+        %code ActiveRecord::Base
+        \.  Each model is backed by an underlying table in the database.
+
+      %p
+        2. A
+        %em "RESTful" database-backed resource
+        utilizes 7 routes to provide actions to create, read, update, and delete rows of model data.
+
+      %p
+        Refer to the
+        = link_to "MoviesApp", "https://github.com/entr925/week5/tree/master/lecture_code/MoviesApp"
+        for a complete example how to build a database-backed resource with all 7 routes and actions.
+
+      %p
+        Create a "fork" of
+        = link_to "Week5", "http://github.com/entr925/week5"
+        \.  The README file has instructions for this week's homework.
+      %p
+        %strong Turn In Your Homework By Friday, May 9th, 11:59pm.
+
+      %p Don't forget these steps after cloning a Rails project and cd'ing into the application folder:
+
+      %ol
+        %li bundle install
+        %li rake db:migrate
+        %li rake db:seed
+        %li rails server
+
+
+    %li.news_item
       %h3 Week 3 Recap
 
       %p
